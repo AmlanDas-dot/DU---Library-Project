@@ -1,0 +1,92 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #f0e68c;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+/* Image gallery styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Image container styling */
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.5s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay text styling */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Dynamic background color on hover */
+#porifera:hover ~ body {
+    background-color: #4a7a8c;
+}
+
+#cnidaria:hover ~ body {
+    background-color: #815d8a;
+}
+
+#ctenophora:hover ~ body {
+    background-color: #ffa07a;
+}
+
+#platyhelminthes:hover ~ body {
+    background-color: #a85f5f;
+}
+
+#aschelminthes:hover ~ body {
+    background-color: #607f5a;
+}
